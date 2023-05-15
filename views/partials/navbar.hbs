@@ -1,0 +1,19 @@
+  <nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">&nbsp <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/book-open-256.png" alt="Списки" height="33px" width="39px"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        {{#if isIndex}}
+        <li class="active"><a href="/">Перегляд</a></li>
+        {{else}}
+        <li><a href="/">Перегляд</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+        <li class="active"><a href="/create">Створення</a></li>
+        {{else}}
+        <li><a href="/create">Створення</a></li>
+        {{/if}}
+        
+    </div>
+  </nav>
